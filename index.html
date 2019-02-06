@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Jared Cole">
+  <meta name="author" content="Jared Cole">
+  <link rel="icon" href="img/Logo.JPG">
+
+  <title>Jared Cole</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <script type="text/javascript">
+        var i = 0;
+        var txt = 'Jared Cole'; /* The text */
+        var speed = 300;
+        var counter = 1;
+
+        function typeWriter() {
+           /* The speed/duration of the effect in milliseconds */
+          if(i == 0) document.getElementById("name").innerHTML = "";
+          if (i < txt.length) {
+              document.getElementById("name").innerHTML += txt.charAt(i);
+              i = i + 1;
+              setTimeout(typeWriter, speed);
+          }
+          else if(i == txt.length){
+            i = 0;
+            setTimeout(typeWriter, speed*4);
+          }
+
+        }
+        window.onload = typeWriter;
+  </script>
+
+</head>
+
+<body>
+
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top" style ="font-family:Verdana;font-size:18px; color:#77b4c9;">
+    <div class="container">
+      <!--<a class="navbar-brand" href="#" style="font-size:24px">Jared Cole</a>-->
+      <img src="img/logo.jpg" id="mybutton" onClick="reload()" class="navbar-brand">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="https://drive.google.com/file/d/162xifP6YL_hc9xLnfNYMJWtFUV22nSuw/view?usp=sharing">Resume
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Past Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mailto:jared.r.cole.22@dartmouth.edu?Subject=Hello!">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="background">
+  <div class="container">
+
+    <div id="social-media-banner">
+      <a href="mailto:jared.r.cole.22@dartmouth.edu?Subject=Hello!" id="logo">
+          <img src="img/black-envelope.png" alt="">
+      </a>
+      <a href="https://www.facebook.com/jaredcole4" id="logo">
+          <img src="img/facebook-logo.png" alt="">
+      </a>
+      <a href="https://github.com/jcole13" id="logo">
+          <img src="img/github-logo.png" alt="">
+      </a>
+      <a href="https://www.linkedin.com/in/jared-cole/" id="logo">
+          <img src="img/linkedin-logo.png" alt="">
+      </a>
+    </div>
+
+
+    <!-- Header -->
+      <h1 class="display-3" id="name" style="text-align: center; margin-top: 0px; font-weight:bolder"></h1>
+      <p class="lead" id="tag" style="text-align: center; font-size: 28px">Dartmouth '22. Interested in Algorithms, Finance, Artificial Intelligence and Data Science. Freelance Developer.</p>
+
+    <!--about-->
+    <div id="about">
+    <div class="jumbotron my-4" style="border-radius: 25px;">
+      <h1 class="display-3" id="mytext"style="text-align:center">About Me</h1>
+      <p class="lead" id="mytext">I am a '22 at Dartmouth College, from New York, with intended majors in Computer Science and Economics. I want to pursue these majors because they allow me to quantify and model the world around me. I'm also involved in the Dartmouth Investment and Philanthropy Program, Dartmouth TAMID, and the Dartmouth newspaper. I am currently pursuing a summer 2019 internship, so please reach out if you know of an opportunity!</p>
+      <p class="lead" id="mytext">In my free time, I'm playing ultimate, practicing tennis, or reading. I also enjoy watching movies, and my favorite is The Matrix.</p>
+      <p class="lead" id="mytext">Programming Languages: Java, Python, Matlab, HTML/CSS, C/C++, Arduino</p>
+      <p class="lead" id="mytext">Relevant Coursework: Cosc 10: Object-Oriented Programming, Cosc 11: Foundations of Applied Computer Science, Econ 01: The Price System, Econ 10: Introduction to Statistical Methods</p>
+      <img src="img/profilepic.jpg" id="profile">
+    </div>
+  </div>
+
+  <div id="projects">
+  <div class="jumbotron my-4" style="border-radius: 25px;">
+    <h1 class="display-3" id="mytext" style="text-align:center">Past Projects</h1>
+  </div>
+
+
+    <!-- Project cards, bootstrap -->
+
+    <div class="row text-center">
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100" id="cardfull">
+          <img class="card-img-top" id="pictureproject" src="img/markov.png" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Hidden Markov Model</h4>
+            <p class="card-text"> This model takes training data on parts of speech and sentences and then is able to determine parts of speech of inputted sentences</p>
+          </div>
+          <div class="card-footer">
+            <a href="https://github.com/jcole13/Part-Of-Speech-Determiner" class="btn btn-primary">Find Out More!</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100" id="cardfull">
+          <img class="card-img-top" id="pictureproject" src="img/client-server.png" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Java Server</h4>
+            <p class="card-text">I made a server in java in which two or more computers could consecutively work on a single drawing</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Link Coming Soon</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100" id="cardfull">
+          <img class="card-img-top" id="pictureproject" src="img/twitter.png" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Twitter Bot</h4>
+            <p class="card-text">I made a bot that could automatically post to a twitter account from command line input </p>
+          </div>
+          <div class="card-footer">
+            <a href="#projects" class="btn btn-primary">Link Coming Soon</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100" id="cardfull">
+          <img class="card-img-top" id="pictureproject" src="img/arduino.png" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Arduino CSI Tool</h4>
+            <p class="card-text">Currently Conducting Research on Channel State Information with an Arduino Devkit</p>
+          </div>
+          <div class="card-footer">
+            <a href="#projects" class="btn btn-primary">Link Coming Soon</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- /.row -->
+  </div>
+  </div>
+</div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <!-- Particles -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <div id="particles-js">
+        <canvas class="particles-js-canvas-el" width="1566" height="1325" style="width: 100%; height: 100%;"></canvas>
+        <p class="m-0 text-center text-white">Copyright &copy; jaredcole.me 2019</p>
+      </div>
+
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/app.js"></script>
+  <!--<script src="js/typer.js"></script>-->
+</body>
+
+</html>
